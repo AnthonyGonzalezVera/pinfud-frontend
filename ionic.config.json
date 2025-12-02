@@ -1,0 +1,7 @@
+{
+  "name": "Pinfud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
