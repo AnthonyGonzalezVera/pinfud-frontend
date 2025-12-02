@@ -1,0 +1,42 @@
+.splash-content {
+  --background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-wrapper {
+  text-align: center;
+  animation: fade 2s ease-in-out;
+}
+
+.splash-logo {
+  width: 140px;
+  animation: zoom 0.9s ease-out forwards;
+}
+
+.splash-title {
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeUp 1.2s ease-out forwards 0.6s;
+}
+
+/* Animaciones */
+@keyframes zoom {
+  0% { transform: scale(0.3); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
