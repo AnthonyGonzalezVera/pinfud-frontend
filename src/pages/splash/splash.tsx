@@ -8,8 +8,7 @@ const Splash: React.FC = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      // más adelante cambiarás a /login
-      history.replace("/");
+      history.replace("/welcome");   // ⭐ Ahora redirige correctamente
     }, 2500);
 
     return () => clearTimeout(timer);
@@ -19,9 +18,7 @@ const Splash: React.FC = () => {
     <IonPage>
       <IonContent className="splash-content" fullscreen>
         <div className="splash-wrapper">
-          {/* ⭐ Logo desde public/ */}
           <img src="/logo.png" alt="Pinfud Logo" className="splash-logo" />
-
           <h1 className="splash-title">PINFUD</h1>
         </div>
       </IonContent>

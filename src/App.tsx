@@ -7,6 +7,9 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 
 import Splash from './pages/splash/splash';
+import Welcome from './pages/auth/Welcome';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
 
 /* Ionic CSS */
 import '@ionic/react/css/core.css';
@@ -31,13 +34,28 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet id="main">
 
-        {/* ⭐ Pantalla Splash */}
+        {/* ⭐ Splash → primera pantalla */}
         <Route exact path="/">
           <Splash />
         </Route>
 
-        {/* Cualquier ruta desconocida → vuelve al splash */}
-        <Redirect to="/" />
+        {/* ⭐ Welcome */}
+        <Route exact path="/welcome">
+          <Welcome />
+        </Route>
+
+        {/* ⭐ Login */}
+        <Route exact path="/login">
+          <Login />
+        </Route>
+
+        {/* ⭐ Register */}
+        <Route exact path="/register">
+          <Register />
+        </Route>
+
+        {/* ⭐ Rutas desconocidas → Welcome */}
+        <Redirect to="/welcome" />
 
       </IonRouterOutlet>
     </IonReactRouter>
