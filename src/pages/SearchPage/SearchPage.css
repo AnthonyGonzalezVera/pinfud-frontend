@@ -1,0 +1,62 @@
+.search-content {
+  --background: #000;
+  color: #fff;
+  padding-top: 10px;
+}
+
+/* Barra superior */
+.search-header {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 10px;
+}
+
+.searchbar {
+  flex: 1;
+  --background: #1a1a1a;
+  --color: #fff;
+  --placeholder-color: #888;
+  border-radius: 20px;
+}
+
+.camera-icon {
+  font-size: 22px;
+  color: #FF670E;
+}
+
+.cancel-text {
+  color: #FF670E;
+  font-weight: bold;
+}
+
+/* Lista */
+.search-list {
+  margin-top: 20px;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+}
+
+.item-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid #FDE4CE;
+}
+
+.item-text {
+  flex: 1;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.close-icon {
+  font-size: 22px;
+  color: #D22701;
+}
